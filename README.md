@@ -38,7 +38,7 @@
 *  In a later stage we will pubish our use-case idea for it in detail. But we need to do some research and coding first. We don't want to trick you into any idea without a tested beta-version of our planed business. So at the moment only the token is here and nothing more.
 *  In the future this coin is supposed to be the main monetary unit for the LiSM-Project (Instant Online Stock Photo Agency). You can read more about the concept at our Website: http://www.lismresearch.com
 
-#####The LiSM-Project in short:
+####The LiSM-Project in short:
 
 * We intend to develop a platform for photo- and videographers (fun, hobby and professional) to presentate and offer their media (photos / videos) to customers (marketing agencies and private persons) for sale.
 * In 2010 it was easy for photographers to earn money by publishing their portfolios at online stock photo agencies. These days are over since years. The marktsegment is flooded with hundreds of boring images in the hope to hit a sell for a few dollars. that's anyoing.
@@ -66,7 +66,7 @@
 	* 11.2017		token: 		launch of contract
 	* 11.2017		token: 		start of Masterium tokensale:: ICO-start 25. Nov. 2017 UCT 12:00
 	* 12.2017		token: 		first interest payout (100% of token balance):: 25. Dez. 2017
-	* 12.2017		token: 		first masternode mining interval (50,000 MTI-token per Masternode):: 25.Dez.2017 to 23.Jan.2018 (30 days)
+	* 12.2017		token: 		first masternode mining interval (50,000 MTI-token per Masternode):: 24.Dez.2017 to 22.Jan.2018 (30 days)
 	* 01.2018		website: 	website web3 integration of contract
 	* 03.2018		exchange:	launch of own anonymous MTI ǀ ETH exchange service
 	* 04.2018		token:		listing Masterium on public 3rd-party exchanges (ubitok.io, idex.market, ...)
