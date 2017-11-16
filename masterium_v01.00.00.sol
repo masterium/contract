@@ -236,8 +236,8 @@ contract MasteriumToken is ReentryProtected  {
     function MasteriumToken() payable public { // constructor
         // contract creation: 3993317
         name     = (debug) ? "Masterium_Testnet" : "Masterium";
-        symbol   = (debug) ? "MTITestnet" : "MTI";
-        version  = (debug) ? "1.00.00.Testnet" : "1.00.00";
+        symbol   = (debug) ? "MTITestnet1" : "MTI";
+        version  = (debug) ? "1.00.01.Testnet" : "1.00.01";
         decimals = 18; // internal resolution = 1e18 = 1 Wei
 
         contractOwner = msg.sender;
@@ -527,8 +527,8 @@ contract MasteriumToken is ReentryProtected  {
 
         // set new balance (and new "last payout index") including interest for both parties before transfer
         _requestInterestPayoutToAccountBalance(_from);   // set new balance including interest
-        //uncommented to keep the transaction cheeper...::_requestInterestPayoutToAccountBalance(_to);     // set new balance including interest
-        //uncommented to keep the transaction cheeper...::_requestInterestPayoutToTotalSupply();
+        _requestInterestPayoutToAccountBalance(_to);     // set new balance including interest
+        _requestInterestPayoutToTotalSupply();
 
         // there must be enough balance for transfer AND transaction-fee
         require(_value.add(masternode.transactionRewardInSubtokensRaw1e18) <= accounts[_from].balance);
@@ -776,6 +776,7 @@ contract MasteriumToken is ReentryProtected  {
 
         _requestInterestPayoutToTotalSupply();
         _requestInterestPayoutToAccountBalance(msg.sender); // do interest payout before moving masternode
+        _requestInterestPayoutToAccountBalance(newAddr); // do interest payout before moving masternode
         require(accounts[newAddr].balance >= masternode.minBalanceRequiredInSubtokensRaw1e18); // required token balance at addr to register a masternode
         //was: require(balanceOf(newAddr) >= masternode.minBalanceRequiredInSubtokensRaw1e18); // required token balance at addr to register a masternode
 
